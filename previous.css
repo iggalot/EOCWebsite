@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.price-venue button {
+	display: block;
+	box-sizing:border-box;
+	color:#fff;
+    background-color: #c82D30;
+    font-size: 1.8rem;
+    font-family: 'Open Sans', 'Verdana', 'Helvetica', sans-serif;
+    padding: 5px 8px;
+    border: 3px solid darkred;
+    border-radius: 12px;
+    line-height: 1.4em;
+	max-width: 88%;
+    margin: 0 auto;
+    text-shadow: 0 1px 3px #600;
+}
+.price-venue a:link, a:hover {
+	text-decoration: none;
+}
+/*  classes table  */
+.table-container {
+	width: 80%;
+	margin: 0 auto 1.5em;
+	background-color: #4F2892;
+	padding: 1rem 0;
+	border-radius: .9rem;
+}
+.day-schedule table {
+	border: 2px solid #4F2892;
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'open sans', 'arial', serif;
+}
+.day-schedule tr {
+	font-size: 1.6rem;
+}
+.day-schedule th {
+	border: 2px solid #4F2892;
+	border-bottom: 3px solid #4F2892;
+	padding:.5em;
+	background-color: #F8F1D0;
+}
+.day-schedule td {
+	border: 1px solid #4F2892;
+	padding:.5em;
+	background-color: #F8F1D0;
+	line-height: 1.3;
+	width: 20%;
+}
+....table
+
+								<div class="table-container">
+									<table class="day-schedule table-responsive-sm">
+										<tbody>
+											<tr>
+												<th scope="col">Monday</th>
+												<th scope="col">Tuesday</th>
+												<th scope="col">Wednesday</th>
+												<th scope="col">Thursday</th>
+											</tr>
+											<tr>
+												<td>Beginner<br>6 - 7pm</td>
+												<td>Beginner<br>6 - 7pm</td>
+												<td>Winter Games II<br>9 - 10am</td>
+												<td>Beginner<br>9 - 10am</td>
+											</tr>
+											<tr>
+												<td>Competition Obedience<br>7 - 8pm</td>
+												<td>Beginner 2<br>7 - 8pm</td>
+												<td>Beginner Novice/Open Sills<br>
+													10:15 11:15am</td>
+												<td>Puppy<br>6 - 7pm</td>
+											</tr>
+											<tr>
+												<td>Competition Obedience<br>8 - 9pm</td>
+												<td>Rally Novice<br>8 - 9pm</td>
+												<td>Puppy<br>7:15 - 8:15pm</td>
+												<td>Beginner<br>7:15 - 8:15pm</td>
+											</tr>
+											<!--tr>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+											</tr-->  
+										 </tbody>
+									</table>
+								</div>

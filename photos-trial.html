@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Evansville Obedience Club - Trial Photo Gallery</title>
+
+<link type="text/css" href="styles.css" rel="stylesheet">
+<link href="csshorizontalmenu.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="csshorizontalmenu.js">
+/***********************************************
+* CSS Horizontal List Menu- by JavaScript Kit (www.javascriptkit.com)
+* Menu interface credits: http://www.dynamicdrive.com/style/csslibrary/item/glossy-vertical-menu/ * This notice must stay intact for usage
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+***********************************************/
+</script>
+<script type="text/javascript" src="niftycube.js"></script>
+<script type="text/javascript">
+window.onload=function(){
+Nifty("td#tdtop","big transparent top");
+Nifty("td#tdbottom","big transparent bottom");
+}
+</script>
+<script type="text/javascript" src="photogallery.js">
+/***********************************************
+* Photo Gallery Script v2.0- © Dynamic Drive (www.dynamicdrive.com)
+* This notice must stay intact for legal use.
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+</script>
+<style type="text/css">
+.photogallery{ /*CSS for TABLE containing a photo album*/
+}
+.photogallery img{ /*CSS for images within an album*/
+border: 1px solid blue;
+}
+.photonavlinks{ /*CSS for pagination DIV*/
+font: bold 14px Arial;
+}
+.photonavlinks a{ /*CSS for each navigational link*/
+margin-right: 2px;
+margin-bottom: 3px;
+padding: 1px 5px;
+border:1px solid gray;
+text-decoration: none;
+background-color: white;
+}
+.photonavlinks a.current{ /*CSS for currently selected navigational link*/
+background-color: yellow;
+}
+</style>
+</head>
+<body style="height: 266px;">
+<table style="text-align: left; width: 800px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td id="tdtop" style="background-color: rgb(245, 204, 24); height: 10px; vertical-align: top;">
+</td>
+</tr>
+<tr style="height: 156px;">
+<td style="height: 156px; vertical-align: top;">
+<img style="width: 800px; height: 156px;" alt="" src="images/eoc-banner.jpg"></td>
+</tr>
+<tr>
+<td style="background-color: white; height: 40px;">
+<script type="text/javascript" src="menubar.js"></script><br>
+</td>
+</tr>
+<tr align="center">
+<td>
+<div style="text-align: center;">
+<h1>Trial Photo Gallery</h1>
+Click on thumbnail to go to that trials photo album.<br>
+<p style="text-align: center;">&nbsp;</p>
+<script type="text/javascript">
+//Define your own array to hold the photo album images
+//Syntax: ["path_to_thumbnail", "opt_image_title", "opt_destinationurl", "opt_linktarget"]
+var PhotoAlbums1=new Array()
+PhotoAlbums1[0]=["PhotoGalleries/photos/2008sep.gif", "2008 Sept. Trial <br> &nbsp","PhotoGalleries/2008-sep.html", "_new"]
+PhotoAlbums1[1]=["PhotoGalleries/photos/2008feb.gif", "2008 Feb. Trial <br> &nbsp","PhotoGalleries/2008-feb.html", "_new"]
+PhotoAlbums1[2]=["PhotoGalleries/photos/2007jul.gif", "2007 July Trial <br> &nbsp","PhotoGalleries/2007-jul.html", "_new"]
+PhotoAlbums1[3]=["PhotoGalleries/photos/2006nov.gif", "2006 Nov. Trial <br> &nbsp","PhotoGalleries/2006-nov.html", "_new"]
+PhotoAlbums1[4]=["PhotoGalleries/photos/2005nov.gif", "2005 Nov.Trial <br> &nbsp","PhotoGalleries/2005-nov.html", "_new"]
+PhotoAlbums1[5]=["PhotoGalleries/photos/2004nov.gif", "2004 Nov.Trial <br> &nbsp","PhotoGalleries/2004-nov.html", "_new"]
+//initiate a photo gallery
+//Syntax: new photogallery(imagearray, cols, rows, tablewidth, tableheight, opt_[paginatetext_prefix, paginatetext_linkprefix])
+var thepics1=new photogallery(PhotoAlbums1, 4, 3, '750px', '400px')
+// Syntax: for optional next page ,['Browse Gallery:', 'Page'])
+</script>
+</div>
+</td>
+</tr>
+<tr>
+<td id="tdbottom" style="background-color: rgb(77, 39, 152); vertical-align: bottom; height: 20px;">
+<script type="text/javascript" src="copyright.js"></script></td>
+</tr>
+</tbody>
+</table>
+<br>
+</body></html>

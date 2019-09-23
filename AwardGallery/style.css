@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+* {
+	margin:0;
+	padding:0; 
+}
+
+body {
+	margin: 0 auto;
+}
+
+#wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+a {
+	text-decoration:none;
+	color: #333333;
+}
+
+#content1 {
+	clear: both;
+}
+
+p {
+	display: block;
+	width: 80%;
+	margin: 0px 0px 0px 50px;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	color: #333333;
+	letter-spacing: .01em;
+	font-style: normal;
+	font-weight: 300;
+	font-family: source-sans-pro; sans-serif;
+}
+
+#caption {
+	float: right;
+	text-align: right;
+	margin: 480px 15px 0 0;
+	padding: 0;
+	color: #737373;
+	font-size:.5em;
+}
+
+/* Section 2 */
+
+#content2 {
+	margin: 20px auto;
+}
+
+#section2A {
+	float: left;
+	margin: 0;
+	width: 500px;
+	overflow: hidden;
+}
+
+#img2A {
+	height:500px;
+	width:100%;
+	background: #333333;
+	background-image:url(images/jupiter_500-2.jpg);
+}
+
+#header2A {
+	width: 90%;
+	float: left;
+	margin: 0px 0px 30px 50px;
+	color:#333333;
+}
+
+#section2B {
+	float: right;
+	margin: 0;
+	width: 500px;
+	overflow: hidden;
+}
+
+#img2B {
+	height: 500px;
+	width:100%;
+	background: #333333;
+	background-image:url(images/sunrise_500.jpg)
+}
+
+#header2B {
+	width: 90%;
+	float: left;
+	margin: 0px 0px 30px 50px;
+}
+
+/* Section 3 */
+
+#content3 {
+	margin: 20px auto;
+}
+
+#section3A {
+	float: left;
+	margin: 0;
+	width: 500px;
+	overflow: hidden;
+}
+
+#img3A {
+	height:500px;
+	width:100%;
+	background: #333333;
+	background-image:url(images/crater-2_500.jpg)
+}
+
+#header3A {
+	width: 90%;
+	float: left;
+	margin: 0px 0px 30px 50px;
+	color:#333333;
+}
+
+#section3B {
+	float: right;
+	margin: 0;
+	width: 500px;
+	overflow: hidden;
+}
+
+#img3B {
+	height: 500px;
+	width:100%;
+	background: #333333;
+	background-image:url(images/bodies_500.jpg);
+}
+
+#header3B {
+	width: 90%;
+	float: left;
+	margin: 0px 0px 30px 50px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+*:focus {
+	outline: none;
+}

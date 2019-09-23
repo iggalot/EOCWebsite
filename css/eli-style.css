@@ -1,0 +1,949 @@
+
+/*########### CSS reset ############*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset, img {
+	border: 0;
+}
+ol, ul {
+	list-style: none;
+}
+caption, th {
+	text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+q:before, q:after {
+	content: '';
+}
+abbr, acronym {
+	border: 0;
+}
+section, header {
+	display: block;
+}
+
+
+/*############ Body ###########*/
+
+body.eli {
+	overflow-y: scroll;
+	font-size:14px;
+}
+
+.eli {
+max-width: 96%; /* 562px; */	
+float:left;
+margin:15px 0;
+}
+
+/*######## Heading   [ <H1> ... <H6> ] ########*/
+
+.eli h1, .eli h2, .eli h3, .eli h4, .eli h5, .eli h6{
+	font-family: 'titilliumregular', Arial, Helvetica, sans-serif;
+	letter-spacing: .1px;
+	padding:5px 8px;
+	margin-left:15px;
+	margin-bottom:4px;
+	text-align:center;
+}
+.eli h1{
+	font-size:34px;
+	padding:4px 8px;
+}
+.eli h2{
+	font-size:30px;
+	padding:4px 8px;
+}
+.eli h3{
+	font-size:24px;
+	padding:4px 8px;
+}
+.eli h4{
+	font-size: 20px;
+	padding:3px 8px;
+}
+.eli h5{
+	font-size:15px;
+	padding:3px 8px;
+}
+.eli h6 {
+	font-size: 12px;
+	padding:2px 8px;	
+}
+
+
+/*############  List   [ <ul> <li> ] ###########*/
+
+.eli ul{
+	font-family: 'titilliumregular', Arial, Helvetica, sans-serif;
+	margin:8px 5px;
+	width:80%;
+}
+.eli ul li{
+	font-size:14px;
+	line-height:16px;
+	
+	margin:0px 2px 0px 8px;
+	padding-left:10px;
+}
+.eli ul li a{
+	text-decoration:none;
+}
+.eli ul li i{
+	font-size:11px;
+	margin-right:4px;
+}
+
+
+/*^^^^ List Header ^^^^*/
+
+.eli ul li.header{
+	font-size:16px;
+	line-height:30px;
+	
+	padding-left:2px;
+}
+
+
+/*^^^^ Disable Icon ^^^^*/
+
+.eli ul.disable-list-icon li i{
+	font-size:1px;
+	display:none;
+}
+
+
+/*^^^^ List Block ^^^^*/
+
+.eli ul.list-block{
+	margin:12px;
+	width:80%;
+}
+.eli ul.list-block li{
+	line-height:20px;
+	
+	display:block;
+	margin:0px;
+	border-bottom:1px solid rgba(51,51,51,.3);
+	
+	transition: all ease-in-out .4s;
+	-webkit-transition: all ease-in-out .4s;
+	-moz-transition: all ease-in-out .4s;
+	-ms-transition: all ease-in-out .4s;
+	-o-transition: all ease-in-out .4s;
+	
+	background-color:rgba(51,51,51,.2);
+}
+.eli ul.list-block li:last-child{
+	border-bottom:none;
+}
+.eli ul.list-block li a{
+	display:block;
+	width:100%;
+}
+.eli ul.list-block li:hover{
+	background-color:rgba(51,51,51,.7);
+	color:#CCCCCC;
+}
+.eli ul.list-block li:hover a{
+	color:#CCCCCC;
+}
+
+
+/*^^^^ List Header ^^^^*/
+
+.eli ul.list-block li.header{
+	font-size:18px;
+	line-height:30px;
+	
+	cursor:none;
+	
+	color:#CCCCCC;
+	background-color:rgba(51,51,51,.5);
+}
+.eli ul.list-block li.header a{
+	color:#CCCCCC;
+}
+.eli ul.list-block li.header i{
+	font-size:17px;
+}
+
+
+
+/*############ Paragraph   [ <p> ] ############*/
+
+.eli p{
+	font-family: 'titilliumregular', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 22px;
+	text-align:left;
+	padding:7px 8px;
+	margin:2px 5px 13px 5px;
+}
+
+
+/*^^^^ Paragraph Size ^^^^*/
+
+.eli p.p-small{
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	text-align:left;
+	font-style:italic;
+	font-size:12px;
+	line-height: 18px;
+	
+	margin:2px 26px 20px 26px;
+	border-left:10px solid #666666;
+}
+.eli p.p-large{
+	font-size:18px;
+	line-height:24px;
+}
+
+
+/*^^^^ Paragraph Align ^^^^*/
+
+.eli p.text-left{
+	text-align:left;
+}
+.eli p.text-right{
+	text-align:right;
+}
+.eli p.text-center{
+	text-align:center;
+}
+.eli p.text-justify{
+	text-align:justify;
+}
+
+
+/*############ Form ###########*/
+
+.eli input {
+	display: none;
+}
+
+/*############ Image   [ <img> ] ############*/
+
+/*.eli img{
+	padding:5px;
+	margin:10px ;
+			
+	background-color:rgba(51,51,51,.1);
+}
+.eli img.img-left{
+	float:left;
+	margin:10px 20px 15px 20px;
+}
+.eli img.img-right{
+	float:right;
+	margin:10px 20px 15px 20px;
+}
+
+
+/*############  a   [ <a> ] ###########*/
+
+.eli a {
+	text-decoration: underline;
+}
+.eli a.button{
+	font-family: 'titilliumregular', Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-transform:uppercase;
+	line-height:36px;
+	text-align:center;
+	text-decoration:none;
+	letter-spacing: .100em;
+	
+	display:inline-block;
+	margin:8px 12px;
+	min-width:60px;
+	max-width:220px;
+	
+	box-shadow:0px 0px 1px 1px rgba(153,153,153,.2);
+	-webkit-box-shadow:0px 0px 1px 1px rgba(153,153,153,.2);
+	-moz-box-shadow:0px 0px 1px 1px rgba(153,153,153,.2);
+	
+	transition: all ease-in-out .4s;
+	-webkit-transition: all ease-in-out .4s;
+	-moz-transition: all ease-in-out .4s;
+	-ms-transition: all ease-in-out .4s;
+	-o-transition: all ease-in-out .4s;
+}
+.eli a.button:hover{
+	box-shadow:0px 0px 1px 1px rgba(153,153,153,.4);
+	-webkit-box-shadow:0px 0px 1px 1px rgba(153,153,153,.4);
+	-moz-box-shadow:0px 0px 1px 1px rgba(153,153,153,.4);
+	
+	background-color:#838383;
+}
+.eli a.button i{
+	margin-right:9px;
+	font-size:14px;
+}
+
+
+/*^^^^ Disable Icon ^^^^*/
+
+.eli a.disable-button-icon i{
+	display:none;
+	font-size:1px;
+}
+
+
+/*^^^^ Button Size ^^^^*/
+
+.eli a.button-mini{
+	font-size:11px;
+	line-height:22px;
+	
+	margin:4px 6px;
+	padding:2px 9px;
+}
+.eli a.button-mini i{
+	font-size:11px;
+	margin-right:6px;
+}
+
+.eli a.button-normal{
+	font-size:15px;
+	line-height:36px;
+	
+	margin:6px 8px;
+	padding:3px 13px;
+}
+.eli a.button-normal i{
+	font-size:15px;
+	margin-right:9px;
+}
+
+.eli a.button-large{
+	font-size:18px;
+	line-height:40px;
+	
+	margin:8px 12px;
+	padding:4px 17px;
+}
+.eli a.button-large i{
+	font-size:18px;
+	margin-right:12px;
+}
+
+
+/*############ Block ############*/
+
+.eli .block{
+	font-family: 'titilliumregular', Arial, Helvetica, sans-serif;
+	font-size:15px;
+	text-align:justify;
+	line-height:22px;
+	
+	border:5px solid rgba(51,51,51,.3);
+	margin:10px 8px;
+	padding:8px 10px;
+	
+	color:#666666;
+}
+.eli .block .header{
+	font-size:22px;
+	line-height:22px;
+	
+	display:block;
+	width:85%;
+	padding:8px 8px;
+	margin-bottom:8px;
+	border-bottom:1px solid rgba(51,51,51,.5);
+}
+.eli .block .header:after{
+	content:" ";
+	clear:both;
+}
+.eli .block .header:befor{
+	content:" ";
+	clear:both;
+}
+.eli .block .header i{
+	font-size:19px;
+	line-height:22px;
+	float:left;
+	padding-right:9px;
+}
+
+.eli .block .footer{
+	display:block;
+	width:100%;
+	padding:8px 10px;
+	margin:10px -10px;
+	
+	background-color:rgba(153,153,153,.6);
+}
+
+
+/*############## Border Radius ##############*/
+
+.border-radius1{
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+.border-radius2{
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+.border-radius3{
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+}
+.border-radius4{
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+}
+.border-radius5{
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+}
+.border-radius6{
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+}
+.border-radius7{
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+
+/*############## Box Shadow ##############*/
+
+.box-shadow1{
+	box-shadow:0px 0px 3px 2px rgba(51,51,51,.8);
+	-webkit-box-shadow:0px 0px 3px 2px rgba(51,51,51,.8);
+	-moz-box-shadow:0px 0px 3px 2px rgba(51,51,51,.8);
+}
+.box-shadow2{
+	box-shadow:0px 0px 7px 3px rgba(51,51,51,.6);
+	-webkit-box-shadow:0px 0px 7px 3px rgba(51,51,51,.6);
+	-moz-box-shadow:0px 0px 7px 3px rgba(51,51,51,.6);
+}
+.box-shadow3{
+	box-shadow:1px 1px 15px 4px rgba(51,51,51,.5) ;
+	-webkit-box-shadow:1px 1px 15px 4px rgba(51,51,51,.5);
+	-moz-box-shadow:1px 1px 15px 4px rgba(51,51,51,.5);
+}
+.box-shadow4{
+	box-shadow:3px 3px 5px 1px rgba(51,51,51,.5) ;
+	-webkit-box-shadow:3px 3px 5px 1px rgba(51,51,51,.5);
+	-moz-box-shadow:3px 3px 5px 1px rgba(51,51,51,.5);
+}
+.box-shadow4{
+	box-shadow:0px 0px 5px 2px rgba(51,51,51,.2) ;
+	-webkit-box-shadow:0px 0px 5px 2px rgba(51,51,51,.2);
+	-moz-box-shadow:1px 1px 15px 2px rgba(51,51,51,.5);
+}
+
+
+/*############## .arc ##############*/
+                           
+/*^^^^ Fixed ^^^^*/
+			   
+section.arc{
+	text-align: left;
+	
+	overflow: hidden;
+	width:100%; /* 530px; */
+	
+	box-shadow:1px 1px 5px 2px rgba(51,51,51,.4);
+	-webkit-box-shadow:1px 1px 5px 2px rgba(51,51,51,.4);
+	-moz-box-shadow:1px 1px 5px 2px rgba(51,51,51,.4);
+}
+section.arc-small{
+	width: 380px;
+}
+section.arc-normal{
+	width: 100%; /* 530px; */
+}
+section.arc-large{
+	width: 960px;
+}
+section.arc-xlarge{
+	width: 1120px;
+}
+
+
+/*^^^^ Fluid ^^^^*/
+
+section.arc-fluid-small{
+	width:30%;
+}
+section.arc-fluid-normal{
+	width:50%;
+}
+section.arc-fluid-full{
+	width:100%;
+}
+
+
+/*############## .arc > Label   [ <label> ] ##############*/
+
+.arc label {
+	font-family: 'exodemi_bold', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size:14px;
+	line-height:43px;
+	
+	display: block;
+	position: relative;
+	padding:0 20px;
+	cursor: pointer;
+	z-index: 20;
+	
+	box-shadow: 0px 0px 0px 1px rgba(155,155,155,.5);
+	-webkit-box-shadow: 0px 0px 0px 1px rgba(155,155,155,.5);
+	-moz-box-shadow: 0px 0px 0px 1px rgba(155,155,155,.5);
+	
+	transition: background-color .7s;
+	-webkit-transition: background-color .7s;
+	-moz-transition: background-color .7s;
+	-o-transition: background-color .7s;
+	-ms-transition: background-color .7s;
+}
+
+
+/*^^^^ Label Size ^^^^*/
+
+.arc label.label-small{
+	font-size:12px;
+	line-height:35px;
+}
+.arc label.label-normal{
+	font-size:14px;
+	line-height:43px;
+}
+.arc label.label-large{
+	font-size:16px;
+	line-height:53px;
+}
+.arc label.label-xlarge{
+	font-size:18px;
+	line-height:73px;
+}
+
+/*----Table----*/
+.arc table {
+ width:90% /*510px; */	
+}
+.arc tr {
+border-bottom: 1px solid #222;	
+}
+.arc td {
+height:24px;		
+}
+
+/*^^^^ Label Icon ^^^^*/
+
+.arc label.label-small i{
+	font-size:15px;
+}
+.arc label.label-normal i{
+	font-size:18px;
+}
+.arc label.label-large i{
+	font-size:20px;
+}
+.arc label.label-xlarge i{
+	font-size:24px;
+}
+
+
+/*^^^^ Icon Left ^^^^*/
+
+.arc label i.label-icon-left {
+	margin-right:9px;
+}
+.arc label.disable-label-icon-left i.label-icon-left{
+	display:none;
+}
+
+
+/*^^^^ Icon Right ^^^^*/
+
+.arc label i.label-icon-right1,
+.arc label i.label-icon-right2 {
+	float: right;
+	margin-right: 15px;
+		
+	transition: all .7s;
+	-webkit-transition: all .7s;
+	-moz-transition: all .7s;
+	-o-transition: all .7s;
+	-ms-transition: all .7s;
+}
+.arc label i.label-icon-right2 {
+	display: none;
+}
+.arc input:checked + label i.label-icon-right1 {
+	display: none;
+}
+.arc input:checked + label i.label-icon-right2 {
+	display: block;
+}
+.arc label.disable-label-icon-right i.label-icon-right1,
+.arc label.disable-label-icon-right i.label-icon-right2{
+	display:none;
+	opacity:0;
+}
+
+/* !!! Change Icon Padding for every label clases */
+
+.arc label i.label-icon-right1,
+.arc label i.label-icon-right2{
+	padding: 10px 0 0 0;
+}
+.arc label.label-small i.label-icon-right1,
+.arc label.label-small i.label-icon-right2{
+	padding: 10px 0 0 0;
+}
+.arc label.label-normal i.label-icon-right1,
+.arc label.label-normal i.label-icon-right2{
+	padding: 12px 0 0 0;
+}
+.arc label.label-large i.label-icon-right1,
+.arc label.label-large i.label-icon-right2{
+	padding: 16px 0 0 0;
+}
+.arc label.label-xlarge i.label-icon-right1,
+.arc label.label-xlarge i.label-icon-right2{
+	padding: 24px 0 0 0;
+}
+
+
+/*^^^^ Click or Hover on label ^^^^*/
+
+.arc input:checked + label,
+.arc input:checked + label:hover {
+	box-shadow: 0px 0px 0px 1px rgba(155,155,155,.3),  0px 2px 2px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0px 0px 0px 1px rgba(155,155,155,.3),  0px 2px 2px rgba(0,0,0,.1);
+	-moz-box-shadow: 0px 0px 0px 1px rgba(155,155,155,.3),  0px 2px 2px rgba(0,0,0,.1);
+}
+
+
+/*############## .arc > .content ##############*/
+
+.content {
+	position: relative;
+	height: 0px;
+	margin-top: -1px;
+	overflow:auto;
+	z-index: 10;
+	background-color:#fefefe;
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.cnt-fixed-height{
+	overflow-y:scroll;
+}
+.cnt-scroll{
+	overflow-y:scroll;
+}
+.cnt-wrapper{
+	padding:3px 10px 15px 10px;
+}
+
+
+/*^^^^ Content size ^^^^*/
+
+.sizes{
+	width:100%;
+	float:left;
+}
+.sizes:after{
+	content:"";
+	clear:both;
+}
+.sizes:befor{
+	content:"";
+	clear:both;
+}
+.sizes .size1{
+	width:100%;
+	float:left;
+}
+
+.sizes .size2{
+	width:50%;
+	float:left;
+}
+.sizes .size3{
+	width:33.333333333333%;
+	float:left;
+}
+.sizes .size4{
+	width:25%;
+	float:left;
+}
+.sizes .size5{
+	width:20%;
+	float:left;
+}
+.sizes .size6{
+	width:10%;
+	float:left;
+}
+
+
+/*^^^^ Click on label ^^^^*/
+
+.arc input:checked ~ div.content {
+	height:auto;
+	max-height:900px;
+	
+	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+	-webkit-box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+	-moz-box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+.arc input:checked ~ div.cnt-scroll{
+	max-height:350px;
+}
+.arc input:checked ~ div.cnt-fixed-height{
+	height:310px;
+}
+
+
+/*^^^^ Animation Effect ^^^^*/
+
+.arc input:checked ~ .content p {
+	-webkit-animation: zoomIn .7s 1;
+	animation: zoomIn .7s 1;
+}
+
+
+
+/*############ Background And Color ###########*/
+
+/*^^^^ .arc-light ^^^^*/
+.eli a, .eli p,
+.arc-light a, .arc-light p{
+	color:#333333;
+}
+.eli h1,
+.eli h2,
+.eli h3,
+.eli h4,
+.eli h5,
+.eli h6,
+.arc-light h1,
+.arc-light h2,
+.arc-light h3,
+.arc-light h4,
+.arc-light h5,
+.arc-light h6{
+	color:#333333;                      
+}
+
+/*..... STYLED FOR EOC....*/
+.eli label,
+.arc-light label{
+	background: #d7d1ff;                         
+	color:#333;
+}
+.eli label:hover,
+.arc-light label:hover{                 
+	background: #f5eab8;              
+	color:#eee;
+}
+.eli input:checked + label,
+.eli input:checked + label:hover,
+.arc-light input:checked + label,
+.arc-light input:checked + label:hover{ 
+	background: #eee;                
+	color:#FFFFFF;
+}
+.eli .content,
+.arc-light .content{
+	background: #ffffff; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#e5e5e5 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #ffffff 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+/* .button */
+.eli a.button,
+.arc-light a.button{
+	background: #f5eab8;
+	color:#ddd;
+	
+	border:1px solid rgba(153,153,153,.3);
+}
+.eli a.button:hover,
+.arc-light a.button:hover{
+	background-color:#f5eab8;
+}
+
+
+/* DEFAULT BLUE
+.eli label,
+.arc-light label{
+	background: #F1F1F1;                         
+	color:#3B4E58;
+}
+.eli label:hover,
+.arc-light label:hover{                 
+	background: #00BFFF;              
+	color:#333333;
+}
+.eli input:checked + label,
+.eli input:checked + label:hover,
+.arc-light input:checked + label,
+.arc-light input:checked + label:hover{ 
+	background: #00BFFF;                
+	color:#FFFFFF;
+}
+.eli .content,
+.arc-light .content{
+	background: #ffffff; /* Old browsers */
+/*	background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+/*	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+/*	background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+/*	background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#e5e5e5 100%); /* Opera 12+ */
+/*	background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+/*	background: radial-gradient(ellipse at center, #ffffff 0%,#e5e5e5 100%); /* W3C */
+/*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/*}
+
+
+/* .button */
+/*.eli a.button,
+.arc-light a.button{
+	background: #F5F5F5;
+	color:#333333;
+	
+	border:1px solid rgba(153,153,153,.3);
+}
+.eli a.button:hover,
+.arc-light a.button:hover{
+	background-color:#E8E8E8;
+}
+*/ 
+ 
+/*^^^^ .arc-dark ^^^^*/
+
+.arc-dark a,
+.arc-dark p{
+	color:#333333;
+}
+.arc-dark h1,
+.arc-dark h2,
+.arc-dark h3,
+.arc-dark h4,
+.arc-dark h5,
+.arc-dark h6{
+	color:#333333;                         
+}
+.arc-dark label{
+	background: #5A5A5A;                         
+	color:#DCDCDC;
+}
+.arc label:hover{                 
+	background: #00BFFF;            
+	color:#333333;
+}
+.arc input:checked + label,
+.arc input:checked + label:hover{ 
+	background: #00BFFF;               
+	color:#FFFFFF;
+}
+.arc-dark .content{
+	background: #bcbcbc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #bcbcbc 0%, #aeaeae 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bcbcbc), color-stop(100%,#aeaeae)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #bcbcbc 0%,#aeaeae 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #bcbcbc 0%,#aeaeae 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #bcbcbc 0%,#aeaeae 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #bcbcbc 0%,#aeaeae 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bcbcbc', endColorstr='#aeaeae',GradientType=0 ); /* IE6-9 */
+}
+.arc-dark a.button{
+	color:#666666;
+	background: #EBEBEB;   
+}
+.arc-dark a.button:hover{
+	color:#CCCCCC;
+	background-color:#696969;
+}
+
+/*######### Green ###########*/
+.green label:hover{                 
+	background: #32CD32;            
+	color:#333333;
+}
+.green input:checked + label,
+.green input:checked + label:hover{ 
+	background: #32CD32;               
+	color:#FFFFFF;
+}
+
+
+/*######### Pink ###########*/
+.pink label:hover{                 
+	background: #FF1493;            
+	color:#333333;
+}
+.pink input:checked + label,
+.pink input:checked + label:hover{ 
+	background: #FF1493;               
+	color:#FFFFFF;
+}
+
+
+/*######### Violet ###########*/
+.violet label:hover{                 
+	background: #4f2892;            
+	color:#eee;
+}
+.violet input:checked + label,
+.violet input:checked + label:hover{ 
+	background: #4f2892;               
+	color:#FFFFFF;
+}
+
+
+/*######### Coral ###########*/
+.coral label:hover{                 
+	background: #FF7F50;            
+	color:#333333;
+}
+.coral input:checked + label,
+.coral input:checked + label:hover{ 
+	background: #FF7F50;               
+	color:#FFFFFF;
+}
+
+
+/*######### Gray ###########*/
+.gray label:hover{                 
+	background:#999999;         
+	color:#333333;
+}
+.gray input:checked + label,
+.gray input:checked + label:hover{ 
+	background: #999999;              
+	color:#FFFFFF;
+}
