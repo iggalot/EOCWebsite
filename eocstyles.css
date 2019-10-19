@@ -15,7 +15,7 @@ body {
 	font-family: "Droid	Sans", sans-serif;
 	color:#111;
 	font-size: 1.6rem;
-	line-height: 1.454;
+/*	line-height: 1.454;*/
 }
 h1, h2, h3, h4, h5 {
 	font-family: "Droid Serif", 'Georgia', serif;
@@ -143,7 +143,7 @@ a:link {
     letter-spacing: 5em;
 }
 /*~~~~ Height ~~~~*/
-.top-pad-quartem {
+/*.top-pad-quartem {
 	padding-top: .25em;
 }
 .top-pad-1m {
@@ -219,7 +219,7 @@ a:link {
 }
 .pad-hor-6m {
     padding-left:6em;
-    padding-right: 6em;
+    padding-right: 6em;*/
 }
 /*~~~-~~~ PAGE ELEMENTS ~~~-~~~*/
 /*.phone {
@@ -271,7 +271,7 @@ a:link {
 }
 .social {
 	float:right;
-	height:50px;
+/*	height:50px;*/
 	padding:15px 0 0 20px;
 }
 .fb-icon {
@@ -287,18 +287,18 @@ a:link {
 	background-image: url("images/TopNavBtmMargin.png");
 	background-repeat: repeat-x;
 	background-position:top;
-	min-height: 20px;
+/*	min-height: 20px;*/
 	margin: 0 auto;
 }
 .btm-top-btm-nav-margin {
 	background-image: url("images/TopNavBtmBtmMargin.png");
 	background-repeat: repeat-x;
 	background-position:top;
-	min-height: 20px;
+/*	min-height: 20px;*/
 	margin: 0 auto;
 }
 .min-ht-20 {
-	min-height: 20px;
+/*	min-height: 20px;*/
 }
 /*----- ALL Pages -----*/
 .home-logo {
@@ -384,8 +384,8 @@ a:link {
 }
 .bottom {
 	clear: both;
-    min-height: 40px;
-	width:100%;
+/*    min-height: 40px;
+*/	width:100%;
 	margin-top:0;
     background-image:url(images/eocbottomgradient.png);
     background-repeat: repeat-x;
@@ -409,11 +409,11 @@ a:link {
 	font-size: 1.05em;
 }
 .left-sidebarlinks {
-	line-height: 1.6em;
+/*	line-height: 1.6em;*/
 	display: block;
 }
 #eoc-slides {
-	min-height:68rem;	
+/*	min-height:68rem;*/	
 }
 .carousel-inner > .item > img {
 	margin-right: auto;
@@ -627,15 +627,15 @@ a:link {
 }
 .instructor {
 	font-size:1.5rem;
-	line-height: 1.43em;
+/*	line-height: 1.43em;*/
 }
 .description {
 	font-size: 1.6rem;
-	line-height: 1.4235em;
+/*	line-height: 1.4235em;*/
 }
 .schedule {
 	border: 2px solid #4f2892;
-	line-height:1.4em;
+/*	line-height:1.4em;*/
 }
 .b-border {
 	border-bottom: #4f2892 solid 1px;
@@ -644,7 +644,7 @@ a:link {
 	background-color:#d7d1ff;	
  	border-radius:9px; 
 	padding: 5px 20px;
-	line-height:1.4em;
+/*	line-height:1.4em;*/
 	font-family:Verdana, Geneva, sans-serif;
 	float:left; 
 	clear:right;
@@ -664,7 +664,7 @@ a:link {
  	border-radius:9px; 
 	padding: 2.5rem 3rem;
 	font-size: 1.6rem;
-	line-height:1.5em;
+/*	line-height:1.5em;*/
 	text-align:left;
 	margin:1rem 0;
 	box-shadow:1px 1px 5px 3px rgba(51,51,51,.3);
@@ -674,7 +674,7 @@ a:link {
  	border-radius:9px; 
 	padding: 2.5rem 3rem;
 	font-size: 1.6rem;
-	line-height:1.5em;
+/*	line-height:1.5em;*/
 	text-align:left;
 	margin:1rem 0;
 	box-shadow:1px 1px 5px 3px rgba(51,51,51,.3);
@@ -757,7 +757,7 @@ a:link {
 	margin: 1rem 0;
 }
 .trial-ht {
-	min-height: 4em;
+/*	min-height: 4em;*/
 }
 .hilite{
 	box-shadow: inset 0 0 2px 2px #f3f2fc;
@@ -776,7 +776,7 @@ a:link {
 /*~~~~~  FAVORITES  ~~~~~*/
 .disclaimer {
 	font-size: 1.1rem;
-	line-height: 1.25em;
+/*	line-height: 1.25em;*/
 }
 
 /*~~~~~  NEW MEMBER  ~~~~~*/
@@ -791,7 +791,7 @@ a:link {
 }
 .awards-btn {
 	min-width:4em;
-	min-height:1.8em;
+/*	min-height:1.8em;*/
 	border-radius: 3rem;
 	background-color: goldenrod;
 	background-image: url(AwardGallery/images/BTN/awards-BtnBKG.svg);
@@ -822,10 +822,10 @@ a:link {
 }
 .eli ul li.p-large {
 	font-size: 1.2em;
-	line-height: 1.8em;
+/*	line-height: 1.8em;*/
 }
 .adjourn {
-	min-height: 400px;
+/*	min-height: 400px;*/
 	background-image:url(images/AdjournementBKG.png);
 	background-repeat: no-repeat;
 	background-size: cover;

@@ -343,55 +343,44 @@
             </div>
         </div>
     </div>
-<!-- CLOSE CONTENT CONTAINER -->
-	
-<!--Footer-->
-<nav class="navbar navbar-default footer">
-	<div class="container">
-    	<div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-6">
-                <p><a href="index.html">Home</a></p>
-                <p><a href="trials.html">Trials</a></p>
-                <p><a href="classes.html">Classes</a></p>
-                <p><a href="contact.html">Contact Us</a></p>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-6">
-                <!--<p><a href="Gallery/photos-trials.html">Trial Photos</a></p>
-                <p><a href="Gallery/photos-classes.html">Class Photos</a></p>-->
-                <p><a href="members.html">Our Members</a></p>
-                <p><a href="awards-year-end.html">Year End Awards</a></p>
-                <p><a href="newmember.html">Become a Member</a></p>
-				<p><a href="mailto:webmanager@evansvilleobedienceclub.com">Contact Web Manager</a></p>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-6">
-                <p><a href="seminars.html">Seminars</a></p>
-                <p><a href="funmatches.html">Show and Go</a></p>
-                <p><a href="other-club-events.html">Other Club Events</a></p>
-            	<p><a href="favorites.html">Favorite Links</a></p>
-			</div>    
-            <div class="col-md-3 col-sm-3 col-xs-6">
-                <p><a href="contact.html">Officers</a></p>
-                <p><a href="instructors.html">Instructors</a></p>
-                <p><a href="about-us.html">Club Information</a></p>
-                <p>website by <a href="http://crownrockdesign.com" target="_blank">Crown Rock Design</a></p>
-            </div>
-        </div>
-        <div class="row">
-			<div class="col-md-12">
-				<div id="copyright"></div> 
-			</div> 
-		</div>
-	</div>
-</nav>
- <div class="bottom">&nbsp;</div><!-- BOTTOM GRADIENT --> 
-<!-- jQuery for Bootstrap's JavaScript  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<!-- Copyright - year & owner -->
-	<script>
-   document.getElementById("copyright").innerHTML =
-"<p><small>Copyright &copy; 2012 - " + new Date().getFullYear() + " &nbsp;&nbsp; &mdash; &nbsp;&nbsp; Evansville Obedience Club &nbsp;&nbsp; &mdash; &nbsp;&nbsp; All Rights Reserved</small></p>";
-</script>      
+
+
+   
+    <!-- scrolling="no" to hide scrollbars -->
+    <!-- Footer -->
+    <h1>Footer start</h1>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#div1").load("footer.html", function(responseTxt, statusTxt, xhr){
+              if(statusTxt == "success")
+                alert("External content loaded successfully!");
+              if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+            });
+          });
+        });
+    </script>
+
+    <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+<button>Get External Content</button>
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $("#footerContent").load("footer.html");
+            });
+        </script> -->
+    <h1>Footer end</h1>
+
+
+    <!-- CLOSE CONTENT CONTAINER -->
+
+
+
+    <iframe src="footer.html" width="100%" frameborder="0"></iframe>
+
 </body>
 </html>
