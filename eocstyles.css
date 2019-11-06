@@ -683,6 +683,7 @@ a:link {
 
 .box-grn {
 	background-color:#b1e8ed;
+ 	border-radius:9px; 
 	padding: 2.5rem 3rem;
 	font-size: 1.6rem;
 	line-height:1.5em;
