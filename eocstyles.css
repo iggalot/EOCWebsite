@@ -669,6 +669,29 @@ a:link {
 	margin:1rem 0;
 	box-shadow:1px 1px 5px 3px rgba(51,51,51,.3);
 }
+
+.box-red {
+	background-color:#f1c6e7;	
+ 	border-radius:9px; 
+	padding: 2.5rem 3rem;
+	font-size: 1.6rem;
+	line-height:1.5em;
+	text-align:left;
+	margin:1rem 0;
+	box-shadow:1px 1px 5px 3px rgba(51,51,51,.3);
+}
+
+.box-grn {
+	background-color:#b1e8ed;
+ 	border-radius:9px; 
+	padding: 2.5rem 3rem;
+	font-size: 1.6rem;
+	line-height:1.5em;
+	text-align:left;
+	margin:1rem 0;
+	box-shadow:1px 1px 5px 3px rgba(51,51,51,.3);
+}
+
 .box-blu {
 	background-color:#d7d1ff;	
  	border-radius:9px; 
