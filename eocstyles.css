@@ -399,6 +399,16 @@ a:link {
 	color:#b40000; 
 	text-shadow:0 1px 1px #933;	
 }
+
+.trial-text-sidebar {
+	max-width: 85%;
+	text-align: center;
+	padding:0;
+	font-size:2rem; 
+	color:#eeeeee; 
+}
+
+
 .trial-btn {
 	display: block;
 	margin: 5px auto;
