@@ -12,6 +12,7 @@
 }
 
 body {
+	margin:0;
 	font-family: "Droid	Sans", sans-serif;
 	color:#111;
 	font-size: 1.6rem;
@@ -236,10 +237,40 @@ a:link {
 
 /*~~~~~ NAVBAR ~~~~~*/
 .navbar {
+	/*
 	background-color:#f5cc18;
 	margin-bottom: 0;
 	box-shadow: 0 3px 2px #4f2892;
+	*/
+	/*overflow: hidden;*/
+	background-color:#f5cc18;
+	position: fixed;
+	top: 0;
+	width: 100%;
+/*	box-shadow: 0 3px 2px #4f2892;*/
 }
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background: #f9e693;
+	color:	#4f2892;
+}
+
+.main {
+	padding: 16px;
+	margin-top: 175px;
+}
+
+/*
 .navbar-default .navbar-brand {
 	color:#4f2892;
 	font-size:2.4em;
@@ -260,6 +291,9 @@ a:link {
 	font-weight:700;
 	background-color:#f00;
 }
+
+*/
+
 /*  All Navbar Links  */
 .navbar-default .navbar-nav>li>a
 .navbar-default .social-media {
@@ -269,6 +303,12 @@ a:link {
 .navbar-default .social-media i {
   font-size: 22px;
 }
+
+
+
+
+
+
 .social {
 	float:right;
 	height:50px;
