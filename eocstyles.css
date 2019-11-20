@@ -237,17 +237,12 @@ a:link {
 
 /*~~~~~ NAVBAR ~~~~~*/
 .navbar {
-	/*
-	background-color:#f5cc18;
-	margin-bottom: 0;
-	box-shadow: 0 3px 2px #4f2892;
-	*/
-	/*overflow: hidden;*/
 	background-color:#f5cc18;
 	position: fixed;
+	vertical-align: center;
 	top: 0;
 	width: 100%;
-/*	box-shadow: 0 3px 2px #4f2892;*/
+	box-shadow: 0 3px 2px #4f2892;
 }
 
 .navbar a {
@@ -265,12 +260,6 @@ a:link {
 	color:	#4f2892;
 }
 
-.main {
-	padding: 16px;
-	margin-top: 175px;
-}
-
-/*
 .navbar-default .navbar-brand {
 	color:#4f2892;
 	font-size:2.4em;
@@ -280,6 +269,41 @@ a:link {
 	background-color:#f5cc18;	
 	text-shadow:0 0 10px #eee;
 }
+
+.navbar-default .navbar-nav > .active  {
+
+	background-color:#f00;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color:#4f2892;
+	background-color:#f9e693;
+}
+
+.navbar-socialmedia img{
+	height: 30px;
+	vertical-align: center;
+/*	max-height: 50%;*/
+/*	max-height: 80%;
+	background-color: red;*/
+}
+
+/* Override BS dropdown defaults */
+.dropdown:hover .dropdown-menu {
+	display: block;
+	background-color: #f5cc18;
+	font-size: 16px;
+}
+
+/* Main page body */
+.main {
+	padding: 16px;
+	margin-top: 50px;
+}
+
+
+
+/*
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 	color:#4f2892;
 	background-color:#f9e693;
@@ -287,6 +311,7 @@ a:link {
 .navbar-default .navbar-nav>li>a {
 		
 }
+
 .navbar-default .navbar-nav > .active  {
 	font-weight:700;
 	background-color:#f00;
@@ -295,33 +320,30 @@ a:link {
 */
 
 /*  All Navbar Links  */
-.navbar-default .navbar-nav>li>a
+/*.navbar-default .navbar-nav>li>a
 .navbar-default .social-media {
   float: right;
   padding: 0 15px;
 }
 .navbar-default .social-media i {
   font-size: 22px;
-}
+}*/
 
 
 
 
 
 
-.social {
+/*.social {
 	float:right;
 	height:50px;
 	padding:15px 0 0 20px;
-}
-.fb-icon {
+}*/
+/*.fb-icon {
 	padding-top:4px;	
-}
-.dropdown:hover .dropdown-menu {
-	display: block;
-	background-color: #f5cc18;
-	font-size: 16px;
-}
+}*/
+
+
 /*~~~~~  Page Top Nav Btm Margin  ~~~~~*/
 .btm-top-nav-margin {
 	background-image: url("images/TopNavBtmMargin.png");
