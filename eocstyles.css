@@ -12,6 +12,7 @@
 }
 
 body {
+	margin:0;
 	font-family: "Droid	Sans", sans-serif;
 	color:#111;
 	font-size: 1.6rem;
@@ -237,18 +238,68 @@ a:link {
 /*~~~~~ NAVBAR ~~~~~*/
 .navbar {
 	background-color:#f5cc18;
-	margin-bottom: 0;
+	color:#4f2892;
+	position: fixed;
+	vertical-align: center;
+	line-height: 2.0em;
+	top: 0;
+	width: 100%;
 	box-shadow: 0 3px 2px #4f2892;
+	font-size: 1.2em;
 }
+
+.navbar .nav .navbar-nav> li > a {
+	float: left;
+	display: block;
+	text-decoration: none;
+}
+
+/*.navbar a:hover {
+	background: #f9e693;
+	color:	 #f2f2f2;
+	
+}*/
+
 .navbar-default .navbar-brand {
 	color:#4f2892;
-	font-size:2.4em;
+	font-size:2.0em;
 	font-weight:700;
 	font-family:'Droid Serif', 'Georgia', 'Palotine Linotype', serif;
-	padding:.5em 1em 0 1em;
-	background-color:#f5cc18;	
 	text-shadow:0 0 10px #eee;
 }
+
+.navbar-default .navbar-nav > .active  {
+	background-color:#f00;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color:#4f2892;
+	background-color:#f9e693;
+}
+
+/* Social media navbar icons */
+.navbar-socialmedia img{
+	line-height: 2.0em;
+	height: 30px;
+	vertical-align: center;
+}
+
+/* Override BS dropdown defaults */
+.dropdown:hover .dropdown-menu {
+	display: block;
+	background-color: #f5cc18;
+	font-size: 16px;
+}
+
+/* Main page body */
+.main {
+	padding: 16px;
+	margin-top: 50px;
+}
+
+
+
+/*
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 	color:#4f2892;
 	background-color:#f9e693;
@@ -256,32 +307,39 @@ a:link {
 .navbar-default .navbar-nav>li>a {
 		
 }
+
 .navbar-default .navbar-nav > .active  {
 	font-weight:700;
 	background-color:#f00;
 }
+
+*/
+
 /*  All Navbar Links  */
-.navbar-default .navbar-nav>li>a
+/*.navbar-default .navbar-nav>li>a
 .navbar-default .social-media {
   float: right;
   padding: 0 15px;
 }
 .navbar-default .social-media i {
   font-size: 22px;
-}
-.social {
+}*/
+
+
+
+
+
+
+/*.social {
 	float:right;
 	height:50px;
 	padding:15px 0 0 20px;
-}
-.fb-icon {
+}*/
+/*.fb-icon {
 	padding-top:4px;	
-}
-.dropdown:hover .dropdown-menu {
-	display: block;
-	background-color: #f5cc18;
-	font-size: 16px;
-}
+}*/
+
+
 /*~~~~~  Page Top Nav Btm Margin  ~~~~~*/
 .btm-top-nav-margin {
 	background-image: url("images/TopNavBtmMargin.png");
@@ -408,7 +466,6 @@ a:link {
 	color:#eeeeee; 
 }
 
-
 .trial-btn {
 	display: block;
 	margin: 5px auto;
@@ -422,19 +479,35 @@ a:link {
 	line-height: 1.6em;
 	display: block;
 }
+
+/* Controls the size of the sidebar and the carousel div */
 #eoc-slides {
-	min-height:68rem;	
+	height: 30em;
+/*	max-height: 30.0em;*/
+	/*min-height:68rem;	*/
 }
+
+/* Format for individual carousel images.  Height should match eoc-slides */
 .carousel-inner > .item > img {
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+
+	border-radius: 0.5em;
+
+	max-height: 100%;
+	max-width: 100%;
+
+	height: 30em;
+
 }
 .event h3{
 	font-size: 2.2rem;
 }
 .home-content-yel {
 	box-sizing: border-box;
-	margin: 1.5rem auto;
+	margin: 1.0rem auto;
 	background-color: #F9E693;
 	border-radius: 20px;
 	padding: 2em 3em;
@@ -442,7 +515,7 @@ a:link {
 }
 .home-content-blu {
 	box-sizing: border-box;
-	margin: 1.5rem auto;
+	margin: 1.0rem auto;
 	background-color:#d7d1ff;
 	border-radius: 20px;
 	padding: 2em 3em;
@@ -451,8 +524,8 @@ a:link {
 	border-top: 3px solid #4f2892;
 	border-bottom: 3px solid #4f2892;
 	background-color: #f9e693;
-	padding: 2em 8em;
-	margin-bottom: 3em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 /*~~~~ ABOUT US ~~~~*/
 .about-box {
