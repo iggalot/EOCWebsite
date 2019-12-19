@@ -1,3 +1,12 @@
+#Disable Varnish Cache
+Header add "Cache-Control" "no-cache"
+
+#Disable and clear the Varnish cache on the server after 20 minutes
+Header add "disablevcache" "true"
+
+#Default index page to index.php but keep index.html as backup
+DirectoryIndex index.html index.php construction.php
+
 #Rewrite everything to https
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
